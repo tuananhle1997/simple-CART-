@@ -48,7 +48,7 @@ if (isset($_SESSION['cart_item'])&& !empty($_SESSION['cart_item']))
             foreach ($_SESSION['cart_item'] as $key_car => $val_cart_item) :
         ?>
         <tr>
-            <td><?php echo $val_cart_item['id'] ?></td>
+            <td><?php echo $val_cart_item[' id'] ?></td>
             <td><?php echo $val_cart_item['product_name'] ?></td>
             <td><img class="card-img-top" style="height: 50px;width:auto;display: block" src="images/<?php echo $val_cart_item['product_image']?>" data-holder-rendered="true"></td>
             <td><?php echo $val_cart_item['price'] ?></td>
